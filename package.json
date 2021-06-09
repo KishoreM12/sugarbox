@@ -1,0 +1,19 @@
+{
+  "name": "userapi",
+  "version": "1.0.0",
+  "description": "SugarBox Task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "kishore.m",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mysql": "^2.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
