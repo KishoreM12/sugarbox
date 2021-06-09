@@ -1,0 +1,167 @@
+{
+	"variables": [],
+	"info": {
+		"name": "USER APIs- SUGARBOX",
+		"_postman_id": "f7c7b81f-99b0-f4a3-897c-ec2b4f2179a3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "LOGIN",
+			"request": {
+				"url": {
+					"raw": "localhost:8000/login?email=admin&password=1234",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "admin",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "1234",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\":\"9731312296\",\n  \"password\":\"1234\"\n}"
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "GET USERS",
+			"request": {
+				"url": "localhost:8000/users",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "GET User Details",
+			"request": {
+				"url": "localhost:8000/users/7",
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth_code",
+						"value": "test",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "GET Task Details",
+			"request": {
+				"url": "localhost:8000/users/7",
+				"method": "GET",
+				"header": [
+					{
+						"key": "auth_code",
+						"value": "test",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE User Details",
+			"request": {
+				"url": "localhost:8000/users/kishore",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "auth_code",
+						"value": "test",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE User Details",
+			"request": {
+				"url": "localhost:8000/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth_code",
+						"value": "test",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"kishore\",\n\t\"password\":\"1234\"\n\t\n}"
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE Task Details",
+			"request": {
+				"url": "localhost:8000/tasks",
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth_code",
+						"value": "test",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"uid\":1,\n\t\"task_name\":\"task 1\"\n\t\n}"
+				},
+				"description": null
+			},
+			"response": []
+		}
+	]
+}
